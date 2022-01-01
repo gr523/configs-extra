@@ -1,0 +1,4 @@
+#!/bin/bash
+
+[ "$1" = "0" ] && ( killall onboard; killall librewolf; killall pcmanfm; killall evince; killall gpicview; killall flameshot; killall polybar; killall easystroke;killall alacritty)
+[ "$1" = "1" ] && (onboard & easystroke &)

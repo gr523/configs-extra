@@ -1,0 +1,10 @@
+tint2 &
+xinput float 17
+xmodmap -e 'keycode 108=Escape'
+volumeicon &
+nm-applet &
+picom &
+nitrogen --restore 
+/usr/bin/lxpolkit &
+/usr/lib/geoclue-2.0/demos/agent &
+redshift &

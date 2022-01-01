@@ -1,0 +1,5 @@
+alias bat "bat --pager 'less'"
+alias configs "/usr/bin/git --git-dir=$HOME/Configs/configsRepo/ --work-tree=$HOME"
+alias private "/usr/bin/git --git-dir=$HOME/Documents/Repo/ --work-tree=$HOME"
+alias dt "date +'%a %b%d %Y'"
+alias vman "vi -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' -c 'map <SPACE> <C-D>' -c 'map b <C-U>' -c 'nmap K :Man <C-R>=expand(\"<cword>\")<CR><CR>' -"

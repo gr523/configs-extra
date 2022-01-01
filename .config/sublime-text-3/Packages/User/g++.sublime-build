@@ -1,0 +1,37 @@
+{
+
+	"cmd": ["bash", "-c", "g++ -g -fsanitize=undefined -std=c++17 '${file}' -o '${folder}/X/Program' && gnome-terminal -- bash -c '${folder}/X/Program ; read'"
+			],
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${folder}/X",
+	"selector": "source.cpp",
+
+	"variants":
+	[
+		
+
+		{
+			"name": ">",
+			"shell_cmd": "g++ -g -fsanitize=undefined -std=c++17 ${file} -o Program && ${folder}/X/Program < Input.txt > Output.txt "
+		},
+
+		{
+			"name": "&>",
+			"shell_cmd": "g++ -g -fsanitize=undefined -std=c++17 ${file} -o ${folder}/X/Program && ${folder}/X/Program < Input.txt &> Output.txt "
+		},
+
+		{
+			"name": ">>",
+			"shell_cmd": "g++ -g -fsanitize=undefined -std=c++17 ${file} -o ${folder}/X/Program && ${folder}/X/Program < Input.txt >> Output.txt "
+		},
+
+		{
+			"name": "terminal",
+			"cmd": ["bash", "-c", "g++ -g -fsanitize=undefined -std=c++17 '${file}' -o '${folder}/X/Program' && gnome-terminal -- bash -c '${folder}/X/Program<Input.txt;read'"
+			]
+			
+		}
+
+	]
+
+}

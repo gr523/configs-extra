@@ -1,0 +1,8 @@
+[Unit]
+Description=Update the plocate database
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/test.sh
+LimitNOFILE=131072
+IOSchedulingClass=idle
