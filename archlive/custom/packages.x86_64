@@ -81,7 +81,7 @@ awesome
 lua
 gnu-free-fonts
 alacritty
-pcmanfm
+pcmanfm-gtk3
 file-roller
 git
 time
@@ -106,3 +106,4 @@ network-manager-applet
 picom
 fd
 xclip
+intellij-idea-community-edition

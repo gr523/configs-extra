@@ -61,3 +61,6 @@ echo "[ ! -f /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/stdc++.h.gch ] && 
 
 rsync ~/.local/share/zap/v2/hw-probe-1.5-164-x86_64.AppImage "${HOME_DIR}/.local/bin/hw-probe"
 rsync -a ~/archlive/{pr.tar.gpg,pr.sh} "${HOME_DIR}/"
+
+rsync -a ~/.m2 "${HOME_DIR}/"
+ln -s /dev/null "${BASE_DIR}/etc/udev/rules.d/80-net-setup-link.rules"
