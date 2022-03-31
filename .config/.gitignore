@@ -8,8 +8,7 @@
 !fish
 !fish/**
 
-!GIMP/
-!GIMP/**
+!GIMP/2.10/menurc
 
 !pcmanfm
 !pcmanfm/**
